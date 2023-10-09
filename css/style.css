@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;1,500&family=Lato:ital,wght@0,400;1,300;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #B9B9B9;
+}
+header{
+    font-family: 'lato', sans-serif;
+    border: 1px;
+    border-color: #86DEEC;
+}
+.header-encabezado{
+    background-color: #212121;
+    margin-bottom: 30px;
+}
+.header-encabezado .section-superior a img{
+    border-radius: 100%;
+    width: 6.25rem;
+    margin-top: .625rem;
+    margin-left: .625rem;
+}
+.header-encabezado .section-superior{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.header-encabezado .nav-bar ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-encabezado .nav-bar ul a{
+    text-decoration: none;
+    text-transform: none;
+    color: #86DEEC;
+    font-size: 2rem;
+}
+/**aca empieza el main index */
+main{
+    font-family: 'Lato', sans-serif;
+    background-color: #212121;
+}
+.section-1 a{
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10%;
+    overflow: hidden;
+    background-color: #B9B9B9;
+    border: 3px solid #86DEEC;
+}
+
+.section-1 a img{
+    width: 21.875rem;
+    
+}
+.section-1{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    row-gap: 1.875rem;
+    grid-template-columns:100px 1fr 1fr 1fr 100px; /*son 12*/
+    grid-template-rows: repeat(3,1fr); /**se pueden creear la cantidad que sea necesaria**/
+    grid-template-areas: 
+    "item11 item1 item2 item3 item14"
+    "item12 item4 item5 item6 item15"
+    "item13 item7 item8 item9 item16"
+    ;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    align-content: stretch;
+}
+.item1{
+    background-color: #B9B9B9;
+    grid-area: item1;
+}
+.item2{
+    background-color: #B9B9B9;
+    grid-area: item2;
+}
+.item3{
+    background-color: #B9B9B9;
+    grid-area: item3;
+}
+.item4{
+    background-color: #B9B9B9;
+    grid-area: item4;
+}
+.item5{
+    background-color: #B9B9B9;
+    grid-area: item5;
+}
+.item6{
+    background-color: #B9B9B9;
+    grid-area: item6;
+    
+}
+.item7{
+    background-color: #B9B9B9;
+    grid-area: item7;
+    
+}
+.item8{
+    background-color: #B9B9B9;
+    grid-area: item8;
+}
+.item9{
+    background-color: #B9B9B9;
+    grid-area: item9;
+    
+}
+/**aca main products**/
+.article-h1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #86DEEC;
+    padding: 30px;
+}
+.section-product img{
+    height: 43.75rem;
+}
+.potato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around
+}
+.potato .div-talle{
+    background-color: #B9B9B9;
+    height: 23rem;
+    width: 15.625rem;
+    gap: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.potato .div-talle ul button a{
+    text-decoration: none;
+    color: black;
+    background-color: #c4c2c2;
+}
+.potato .div-talle button a{
+    text-decoration: none;
+    color: black;
+    background-color: #c4c2c2;
+}
+.mas-productos{
+    margin: 1.25rem 50rem;
+    color: #86DEEC;
+}
+.section-mas button img{
+    width: 18rem;
+    
+}
+.section-mas{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: flex-start; 
+}
+.section-mas button{
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10%;
+    overflow: hidden;
+    background-color: #B9B9B9;
+    border-color: #86DEEC;
+
+}
+/**aca empieza main acces***/
+.section-acc button img{
+    width: 20rem;
+}
+.section-acc{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.section-acc button{
+    background-color: #212121;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: .625rem;
+}
+.section-acc button a{
+    text-decoration: none;
+    text-transform: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10%;
+    overflow: hidden;
+    background-color: #B9B9B9;
+    border: 3px solid #86DEEC;
+
+}
+/**aca empieza el main info**/
+.card-info div{
+    margin-top: 2.5rem;
+    background-color: #B9B9B9;
+    height: 30.5rem;
+    width: 30.5rem;
+    text-align: center;
+}
+.card-info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+/**aca empieza el footer**/
+footer{
+    background-color: #212121;
+    height: 8.5rem;
+    margin-top: 1.875rem;
+    font-family: 'Lato', sans-serif;
+    
+}
+footer .section-redes{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .section-redes ul a{
+    text-decoration: none;
+    color: #86DEEC;
+}
+footer .section-redes .ul-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+footer .section-redes .logo-footer img{
+    border-radius: 100%;
+    width: 6.25rem;
+    margin-top: 1.25rem;
+}
+footer .section-redes ul li{
+    margin-left: 10px;
+}
+footer .section-redes ul li img{
+    width: 25px;
+    height: 25px;
+}
+footer .section-redes ul .li-discord img{
+    border-radius: 100%;
+}
+
+
+@media(max-width:1200px){
+    
+    .section-1 a img{
+    width: 350px;
+    }
+    .section-1{
+        gap:0rem;
+        column-gap: 0px;
+        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(2,200px);
+        grid-template-rows: repeat(5,1fr); 
+        grid-template-areas: 
+        "item1 item2"
+        "item3 item4"
+        "item5 item6"
+        "item7 item8"
+        "item9 item"
+        ;
+    }
+}
+
+
+
+
